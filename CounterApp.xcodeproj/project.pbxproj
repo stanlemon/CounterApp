@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F672411F22B034850083DDF1 /* CounterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F672411E22B034840083DDF1 /* CounterData.swift */; };
+		F672412222B034B60083DDF1 /* Counter+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F672412022B034B60083DDF1 /* Counter+CoreDataClass.swift */; };
+		F672412322B034B60083DDF1 /* Counter+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F672412122B034B60083DDF1 /* Counter+CoreDataProperties.swift */; };
+		F672412422B036550083DDF1 /* CounterApp.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = F688EE8A22B033DE009AD4F7 /* CounterApp.xcdatamodeld */; };
 		F688EE8722B033DE009AD4F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F688EE8622B033DE009AD4F7 /* AppDelegate.swift */; };
 		F688EE8922B033DE009AD4F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F688EE8822B033DE009AD4F7 /* SceneDelegate.swift */; };
-		F688EE8C22B033DE009AD4F7 /* CounterApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F688EE8A22B033DE009AD4F7 /* CounterApp.xcdatamodeld */; };
 		F688EE8E22B033DE009AD4F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F688EE8D22B033DE009AD4F7 /* ContentView.swift */; };
 		F688EE9022B033DF009AD4F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F688EE8F22B033DF009AD4F7 /* Assets.xcassets */; };
 		F688EE9322B033DF009AD4F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F688EE9222B033DF009AD4F7 /* Preview Assets.xcassets */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F672411E22B034840083DDF1 /* CounterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterData.swift; sourceTree = "<group>"; };
+		F672412022B034B60083DDF1 /* Counter+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F672412122B034B60083DDF1 /* Counter+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Counter+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F688EE8322B033DE009AD4F7 /* CounterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F688EE8622B033DE009AD4F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F688EE8822B033DE009AD4F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +107,8 @@
 		F688EE8522B033DE009AD4F7 /* CounterApp */ = {
 			isa = PBXGroup;
 			children = (
+				F672412022B034B60083DDF1 /* Counter+CoreDataClass.swift */,
+				F672412122B034B60083DDF1 /* Counter+CoreDataProperties.swift */,
 				F688EE8622B033DE009AD4F7 /* AppDelegate.swift */,
 				F688EE8822B033DE009AD4F7 /* SceneDelegate.swift */,
 				F688EE8D22B033DE009AD4F7 /* ContentView.swift */,
@@ -109,6 +117,7 @@
 				F688EE9722B033DF009AD4F7 /* Info.plist */,
 				F688EE8A22B033DE009AD4F7 /* CounterApp.xcdatamodeld */,
 				F688EE9122B033DF009AD4F7 /* Preview Content */,
+				F672411E22B034840083DDF1 /* CounterData.swift */,
 			);
 			path = CounterApp;
 			sourceTree = "<group>";
@@ -219,7 +228,7 @@
 				};
 			};
 			buildConfigurationList = F688EE7E22B033DE009AD4F7 /* Build configuration list for PBXProject "CounterApp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -243,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F672412422B036550083DDF1 /* CounterApp.xcdatamodeld in Resources */,
 				F688EE9622B033DF009AD4F7 /* LaunchScreen.storyboard in Resources */,
 				F688EE9322B033DF009AD4F7 /* Preview Assets.xcassets in Resources */,
 				F688EE9022B033DF009AD4F7 /* Assets.xcassets in Resources */,
@@ -271,9 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F688EE8722B033DE009AD4F7 /* AppDelegate.swift in Sources */,
+				F672412322B034B60083DDF1 /* Counter+CoreDataProperties.swift in Sources */,
 				F688EE8922B033DE009AD4F7 /* SceneDelegate.swift in Sources */,
 				F688EE8E22B033DE009AD4F7 /* ContentView.swift in Sources */,
-				F688EE8C22B033DE009AD4F7 /* CounterApp.xcdatamodeld in Sources */,
+				F672412222B034B60083DDF1 /* Counter+CoreDataClass.swift in Sources */,
+				F672411F22B034850083DDF1 /* CounterData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
