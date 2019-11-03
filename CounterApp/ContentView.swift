@@ -31,7 +31,7 @@ struct ContentView : View {
             Spacer()
             Text("Counter App")
                 .font(.title)
-                .color(.blue)
+                .foregroundColor(.blue)
             Text("Because everyone deserves a demo!")
                 .font(.subheadline)
             Spacer()

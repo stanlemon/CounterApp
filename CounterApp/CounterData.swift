@@ -10,7 +10,7 @@ import SwiftUI
 import Combine
 import CoreData
 
-final class CounterData: BindableObject  {
+final class CounterData: ObservableObject  {
     
     let appDelegate: AppDelegate
     let context: NSManagedObjectContext
@@ -43,6 +43,7 @@ final class CounterData: BindableObject  {
     
     let didChange = PassthroughSubject<CounterData, Never>()
     
+    @Published
     var count: Int16 = 0  {
         didSet {
             print("Data changed to ", self.count)
